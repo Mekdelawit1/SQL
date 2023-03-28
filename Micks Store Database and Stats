@@ -1,0 +1,27 @@
+--Create a store database 
+
+CREATE TABLE micks (item_id integer primary key, item text, price integer, quantity integer, order_country text);
+
+INSERT INTO micks VALUES
+(26, 'shoes', 10.25, 1, 'spain'),
+(98, 'pants', 20.00, 2, 'austrilia'),
+(12, 'leggings', 15.90, 3, 'colombia'),
+(1, 'socks', 5.99, 10, 'iceland'),
+(25, 'jackets', 30.99, 2, 'spain'),
+(30, 'shirt', 12.80, 1, 'newzeland'),
+(10, 'bikes', 80.00, 8, 'unitedkingdom'),
+(3, 'toys', 6.10, 12, 'unitedstates'),
+(8, 'flowers', 3.55, 70, 'iceland'),
+(16, 'couch', 800.99, 1, 'unitedstates'),
+(15, 'pillows', 90.73, 6, 'austrilia'),
+(6, 'blankets', 20.76, 80, 'newzeland'),
+(80, 'dresses', 24.45, 16, 'singapore'),
+(40, 'bras', 33.90, 29, 'unitedstates'),
+(11, 'boxers',22.12, 15, 'singapore');
+
+--select all item from the database
+SELECT * FROM micks;
+
+--display database ordered by price in ascending order 
+SELECT * FROM micks
+ORDER BY price asc;
